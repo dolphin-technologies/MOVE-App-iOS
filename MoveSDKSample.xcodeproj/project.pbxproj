@@ -229,6 +229,7 @@
 		AB59A673293F6B7A00748EF8 /* NavigationToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
 		AB59A675293F730300748EF8 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		AB59A680293F847500748EF8 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AB6CA58B29BF429400731ABF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AB6F49E8299A32ED00CA786E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		AB6F49EA299A381400CA786E /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		AB6F49EC299A41CC00CA786E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -478,6 +479,7 @@
 		AB36BE3A269F052B005A6AD2 = {
 			isa = PBXGroup;
 			children = (
+				AB6CA58B29BF429400731ABF /* LICENSE */,
 				1BA9D74F26B019A7002297CF /* README.md */,
 				AB36BE45269F052B005A6AD2 /* MoveSDKSample */,
 				AB36BE44269F052B005A6AD2 /* Products */,
