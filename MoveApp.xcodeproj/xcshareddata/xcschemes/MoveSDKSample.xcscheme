@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AB36BE42269F052B005A6AD2"
-               BuildableName = "MoveSDKSample.app"
-               BlueprintName = "MoveSDKSample"
-               ReferencedContainer = "container:MoveSDKSample.xcodeproj">
+               BuildableName = "MoveApp.app"
+               BlueprintName = "MoveApp"
+               ReferencedContainer = "container:MoveApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AB36BE42269F052B005A6AD2"
-            BuildableName = "MoveSDKSample.app"
-            BlueprintName = "MoveSDKSample"
-            ReferencedContainer = "container:MoveSDKSample.xcodeproj">
+            BuildableName = "MoveApp.app"
+            BlueprintName = "MoveApp"
+            ReferencedContainer = "container:MoveApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AB36BE42269F052B005A6AD2"
-            BuildableName = "MoveSDKSample.app"
-            BlueprintName = "MoveSDKSample"
-            ReferencedContainer = "container:MoveSDKSample.xcodeproj">
+            BuildableName = "MoveApp.app"
+            BlueprintName = "MoveApp"
+            ReferencedContainer = "container:MoveApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

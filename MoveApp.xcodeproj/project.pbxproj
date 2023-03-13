@@ -210,7 +210,7 @@
 		AB1C98D3296446FE00965FD6 /* PostApiV1TimelineItemsByIdConverttype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApiV1TimelineItemsByIdConverttype.swift; sourceTree = "<group>"; };
 		AB1C98D5296446FE00965FD6 /* GetApiV1TimelineByIdDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetApiV1TimelineByIdDetails.swift; sourceTree = "<group>"; };
 		AB1C98D6296446FE00965FD6 /* GetApiV1Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetApiV1Timeline.swift; sourceTree = "<group>"; };
-		AB36BE43269F052B005A6AD2 /* MoveSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB36BE43269F052B005A6AD2 /* MoveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB36BE46269F052B005A6AD2 /* MoveSDKSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveSDKSampleApp.swift; sourceTree = "<group>"; };
 		AB36BE48269F052B005A6AD2 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		AB36BE4A269F0534005A6AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -490,7 +490,7 @@
 		AB36BE44269F052B005A6AD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB36BE43269F052B005A6AD2 /* MoveSDKSample.app */,
+				AB36BE43269F052B005A6AD2 /* MoveApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -702,9 +702,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB36BE42269F052B005A6AD2 /* MoveSDKSample */ = {
+		AB36BE42269F052B005A6AD2 /* MoveApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB36BE52269F0534005A6AD2 /* Build configuration list for PBXNativeTarget "MoveSDKSample" */;
+			buildConfigurationList = AB36BE52269F0534005A6AD2 /* Build configuration list for PBXNativeTarget "MoveApp" */;
 			buildPhases = (
 				AB36BE3F269F052B005A6AD2 /* Sources */,
 				AB36BE40269F052B005A6AD2 /* Frameworks */,
@@ -715,7 +715,7 @@
 			);
 			dependencies = (
 			);
-			name = MoveSDKSample;
+			name = MoveApp;
 			packageProductDependencies = (
 				AB16FCCE294C89EA0081E2A6 /* Alamofire */,
 				AB16FCD1294C8B600081E2A6 /* AlertToast */,
@@ -724,7 +724,7 @@
 				AB91F51029A3995300EE98C1 /* DolphinMoveSDK */,
 			);
 			productName = MoveSDKSample;
-			productReference = AB36BE43269F052B005A6AD2 /* MoveSDKSample.app */;
+			productReference = AB36BE43269F052B005A6AD2 /* MoveApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -742,7 +742,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB36BE3E269F052B005A6AD2 /* Build configuration list for PBXProject "MoveSDKSample" */;
+			buildConfigurationList = AB36BE3E269F052B005A6AD2 /* Build configuration list for PBXProject "MoveApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -761,7 +761,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB36BE42269F052B005A6AD2 /* MoveSDKSample */,
+				AB36BE42269F052B005A6AD2 /* MoveApp */,
 			);
 		};
 /* End PBXProject section */
@@ -1160,7 +1160,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB36BE3E269F052B005A6AD2 /* Build configuration list for PBXProject "MoveSDKSample" */ = {
+		AB36BE3E269F052B005A6AD2 /* Build configuration list for PBXProject "MoveApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB36BE50269F0534005A6AD2 /* Debug */,
@@ -1169,7 +1169,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB36BE52269F0534005A6AD2 /* Build configuration list for PBXNativeTarget "MoveSDKSample" */ = {
+		AB36BE52269F0534005A6AD2 /* Build configuration list for PBXNativeTarget "MoveApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB36BE53269F0534005A6AD2 /* Debug */,
