@@ -1,0 +1,3 @@
+NSLocationAlwaysAndWhenInUseUsageDescription="App needs to access locations in order to detect and record trips";
+NSLocationWhenInUseUsageDescription="App needs to access locations in order to detect and record trips";
+NSMotionUsageDescription="App needs to access activities in order to detect and record trips";

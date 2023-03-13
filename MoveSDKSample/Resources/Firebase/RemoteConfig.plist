@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>url_help</key>
+	<string>https://www.dolph.in/c/movedemo/apppages-infohelp.php</string>
+	<key>url_imprint</key>
+	<string>https://www.dolph.in/c/movedemo/apppages-imprint.php</string>
+	<key>url_privacy</key>
+	<string>https://www.dolph.in/c/movedemo/apppages-privacy.php</string>
+	<key>url_privacyanalytics</key>
+	<string>https://www.dolph.in/c/movedemo/apppages-privacyanalytics.php</string>
+	<key>url_termsofuse</key>
+	<string>https://www.dolph.in/c/movedemo/apppages-tou.php</string>
+</dict>
+</plist>
