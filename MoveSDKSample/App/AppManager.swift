@@ -678,7 +678,6 @@ extension AppManager {
 				} else if res.statusCode == 400 {
 					continuation.resume(throwing: AppError.logout)
 				} else if res.statusCode == 401 {
-					print("wrong: \(self.auth!.userToken)")
 					continuation.resume(throwing: AppError.tokenExpired)
 				} else if let message = res.failure?.status?.message ?? res.success?.status?.message {
 					continuation.resume(throwing: AppError.serverError(message))
