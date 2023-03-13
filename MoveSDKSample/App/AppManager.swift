@@ -475,7 +475,6 @@ extension AppManager {
 		request.makeRequest { response in
 			switch response.result {
 			case let .success(res):
-				print("\(res)")
 				if let data = res.success?.data {
 					continuation.resume(returning: data)
 				} else if let message = res.failure?.status?.message ?? res.success?.status?.message {
@@ -518,7 +517,6 @@ extension AppManager {
 		request.makeRequest { response in
 			switch response.result {
 			case let .success(res):
-				print("\(res)")
 				if res.success != nil {
 					continuation.resume()
 				} else if res.statusCode == 400 {
@@ -544,7 +542,6 @@ extension AppManager {
 		request.makeRequest { response in
 			switch response.result {
 			case let .success(res):
-				print("\(res)")
 				if let contract = res.success?.data {
 					continuation.resume(returning: contract)
 				} else if res.statusCode == 400 {
@@ -571,7 +568,6 @@ extension AppManager {
 		request.makeRequest { response in
 			switch response.result {
 			case let .success(res):
-				print("\(res)")
 				if res.success != nil {
 					continuation.resume()
 				} else if res.statusCode == 400 {
@@ -598,7 +594,6 @@ extension AppManager {
 		request.makeRequest { response in
 			switch response.result {
 			case let .success(res):
-				print("\(res)")
 				if res.success?.data != nil {
 					continuation.resume()
 				} else if res.statusCode == 400 {
@@ -774,7 +769,6 @@ extension AppManager {
 		request.makeRequest { response in
 			switch response.result {
 			case let .success(res):
-				print("\(res)")
 				guard let data = res.success?.data,
 					  let productAuth = data.productAuthInfo,
 					  let userToken = productAuth.accessToken,

@@ -469,8 +469,4 @@ struct MapView: UIViewRepresentable {
 	func updateUIView(_ view: CustomMapView, context: Context) {
 		context.coordinator.set(mode: mode, details: details)
 	}
-
-	func testFunc()  {
-		print("Toggle Compass")
-	}
 }
