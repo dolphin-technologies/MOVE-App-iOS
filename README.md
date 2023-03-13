@@ -1,4 +1,4 @@
-# Dolphin MOVE SDK Sample App
+# Dolphin MOVE App
 
 A sample application that uses the Dolphin MOVE SDK. 
 This project could be a great starter project for new apps, else AppManager.swift file is a recommended starting point for embedding the SDK in already existing projects.
