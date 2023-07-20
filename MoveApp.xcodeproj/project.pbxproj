@@ -1210,7 +1210,7 @@
 			repositoryURL = "https://github.com/dolphin-technologies/MOVE-iOS-Packages.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.4;
+				minimumVersion = 2.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
