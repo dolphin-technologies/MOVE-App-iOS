@@ -1119,10 +1119,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3.4;
+				MARKETING_VERSION = 2.6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dolphin.move.2.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Move Sample App";
+				PROVISIONING_PROFILE_SPECIFIER = "Move App iOS";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1146,10 +1146,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3.4;
+				MARKETING_VERSION = 2.6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dolphin.move.2.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Move Sample App";
+				PROVISIONING_PROFILE_SPECIFIER = "Move App iOS";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
