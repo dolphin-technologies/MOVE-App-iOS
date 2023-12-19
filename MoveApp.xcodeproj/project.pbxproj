@@ -1203,7 +1203,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 9.6.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 		AB91F50F29A3995300EE98C1 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */ = {
@@ -1211,7 +1211,7 @@
 			repositoryURL = "https://github.com/dolphin-technologies/MOVE-iOS-Packages.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.2;
+				minimumVersion = 2.6.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
