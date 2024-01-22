@@ -26,7 +26,7 @@ struct OnboardingNavigationView: View {
 			LoginView()
 		}
 		.toast(isPresenting: $appModel.isPresentingAlert) {
-			AlertToast(displayMode: .hud, type: appModel.alert.type, title: appModel.alert.message)
+			AlertToast(displayMode: .alert, type: appModel.alert.type, title: appModel.alert.message)
 		}
 		.toast(isPresenting: $appModel.isLoading) {
 			AlertToast(type: .loading)
