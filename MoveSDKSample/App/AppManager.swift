@@ -326,6 +326,13 @@ class AppManager: ObservableObject {
 		} catch {}
 	}
 
+	/// Force logout user.
+	func forceLogout() {
+		Task {
+			self.logout()
+		}
+	}
+
 	/// Update app user token.
 	/// - throws: network errors
 	private func updateToken() async throws {
@@ -351,6 +358,12 @@ class AppManager: ObservableObject {
 		DispatchQueue.main.async {
 			self.userID = nil
 			SDKManager.shared.shutdown()
+		}
+	}
+
+	public func invalidateUser() {
+		Task {
+			self.logout()
 		}
 	}
 

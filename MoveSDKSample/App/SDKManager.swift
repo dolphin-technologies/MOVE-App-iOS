@@ -167,9 +167,9 @@ extension SDKManager {
 		}
 
 		switch state {
-		case .expired:
-			/* the SDK Failed to refresh the current MOVEAuth and needs a new MOVEAuth key */
-			self.fetchAndUpdateSDKAuth()
+		case .invalid:
+			/* the SDK user was logged out of the SDK */
+			AppManager.shared.forceLogout()
 		default:
 			break
 		}
@@ -195,37 +195,5 @@ extension SDKManager {
 	func shutdown() {
 		isSDKStarted = false
 		moveSDK.shutDown()
-	}
-}
-
-//MARK:- Authorization
-extension SDKManager {
-	/// Refetch new SDK Auth object and update the SDK.
-	///
-	/// # Tasks
-	///
-	/// 1. fetch new SDK Auth
-	/// 2. persist it
-	/// 3. update the SDK with the new Auth using`update(auth: MoveAuth)` API
-	func fetchAndUpdateSDKAuth() {
-		/* to get new refresh/access token use register function */
-		Task {
-			do {
-				let auth = try await AppManager.shared.updateSDKToken()
-				self.moveSDK.update(auth: auth) { error in
-					if let error = error {
-						print("\(error)")
-						/* an error here is only possible if we gave the wrong user id */
-					}
-				}
-			} catch AppError.logout {
-				/* we could have been logged out during the fetch */
-				DispatchQueue.main.async {
-					AppManager.shared.errorMessage = "\(AppError.logout)"
-				}
-			} catch {
-				print("\(error)")
-			}
-		}
 	}
 }
