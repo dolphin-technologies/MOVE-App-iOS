@@ -113,6 +113,7 @@ class AppManager: ObservableObject {
 		request.customHeaders["x-app-appid"] = appid
 		request.customHeaders["x-app-appversion"] = version
 		request.customHeaders["x-app-platform"] = platform
+		request.customHeaders["x-app-qualifier"] = MoveSDK.shared.getDeviceQualifier()
 		request.customHeaders["Date"] = date
 
 		guard let auth = self.auth else { return }
@@ -421,7 +422,12 @@ class AppManager: ObservableObject {
 					try await updateToken()
 					resolveContinuations()
 				} catch {
-					resolveContinuations(error: error)
+					switch error as? AppError {
+					case .logout:
+						logout()
+					default:
+						resolveContinuations(error: error)
+					}
 				}
 			} else {
 				/* enqueue */
