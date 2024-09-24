@@ -1,4 +1,5 @@
 {
+  "originHash" : "787cafcc0451357a2a27b9658a6da5d9aa090174f9342e863ccdff93f26989c7",
   "pins" : [
     {
       "identity" : "abseil-cpp-swiftpm",
@@ -104,8 +105,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dolphin-technologies/MOVE-iOS-Packages.git",
       "state" : {
-        "revision" : "d35b6d729db64cba379e41cab973352a6fabb333",
-        "version" : "2.6.9"
+        "revision" : "0b7d3f84779fc2f4e568b20c2fc66c370044f300",
+        "version" : "2.10.0"
       }
     },
     {
@@ -136,5 +137,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
