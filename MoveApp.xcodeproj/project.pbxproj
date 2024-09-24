@@ -70,6 +70,7 @@
 		AB59A674293F6B7A00748EF8 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59A673293F6B7A00748EF8 /* NavigationToolbar.swift */; };
 		AB59A676293F730300748EF8 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59A675293F730300748EF8 /* MessagesView.swift */; };
 		AB59A681293F847500748EF8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59A680293F847500748EF8 /* WebView.swift */; };
+		AB65531F2CA31E22006E979E /* DolphinMoveSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AB65531E2CA31E22006E979E /* DolphinMoveSDK */; };
 		AB6F49E9299A32ED00CA786E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F49E8299A32ED00CA786E /* AppModel.swift */; };
 		AB6F49EB299A381400CA786E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F49EA299A381400CA786E /* AppError.swift */; };
 		AB6F49ED299A41CC00CA786E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F49EC299A41CC00CA786E /* UserDefaults.swift */; };
@@ -328,6 +329,7 @@
 			files = (
 				AB16FCCF294C89EA0081E2A6 /* Alamofire in Frameworks */,
 				AB8CA1EE29704BC000572777 /* FirebaseCrashlytics in Frameworks */,
+				AB65531F2CA31E22006E979E /* DolphinMoveSDK in Frameworks */,
 				AB8CA1F029704BC000572777 /* FirebaseRemoteConfigSwift in Frameworks */,
 				AB16FCD2294C8B600081E2A6 /* AlertToast in Frameworks */,
 			);
@@ -719,6 +721,7 @@
 				AB16FCD1294C8B600081E2A6 /* AlertToast */,
 				AB8CA1ED29704BC000572777 /* FirebaseCrashlytics */,
 				AB8CA1EF29704BC000572777 /* FirebaseRemoteConfigSwift */,
+				AB65531E2CA31E22006E979E /* DolphinMoveSDK */,
 			);
 			productName = MoveSDKSample;
 			productReference = AB36BE43269F052B005A6AD2 /* MoveApp.app */;
@@ -1223,6 +1226,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AB16FCD0294C8B600081E2A6 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
+		};
+		AB65531E2CA31E22006E979E /* DolphinMoveSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB4B0B682CA3030C00213C08 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */;
+			productName = DolphinMoveSDK;
 		};
 		AB8CA1ED29704BC000572777 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
