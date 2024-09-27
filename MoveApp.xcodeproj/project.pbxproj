@@ -70,6 +70,7 @@
 		AB59A674293F6B7A00748EF8 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59A673293F6B7A00748EF8 /* NavigationToolbar.swift */; };
 		AB59A676293F730300748EF8 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59A675293F730300748EF8 /* MessagesView.swift */; };
 		AB59A681293F847500748EF8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59A680293F847500748EF8 /* WebView.swift */; };
+		AB65531F2CA31E22006E979E /* DolphinMoveSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AB65531E2CA31E22006E979E /* DolphinMoveSDK */; };
 		AB6F49E9299A32ED00CA786E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F49E8299A32ED00CA786E /* AppModel.swift */; };
 		AB6F49EB299A381400CA786E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F49EA299A381400CA786E /* AppError.swift */; };
 		AB6F49ED299A41CC00CA786E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F49EC299A41CC00CA786E /* UserDefaults.swift */; };
@@ -151,7 +152,6 @@
 		AB8CA2002971974900572777 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CA1FF2971974900572777 /* Colors.swift */; };
 		AB8CA2022971A22300572777 /* GenderPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CA2012971A22300572777 /* GenderPicker.swift */; };
 		AB91F50A299D273300EE98C1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91F509299D273300EE98C1 /* Section.swift */; };
-		AB91F51129A3995300EE98C1 /* DolphinMoveSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AB91F51029A3995300EE98C1 /* DolphinMoveSDK */; };
 		AB9E200E2975720E00AD8A09 /* WebLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E200D2975720E00AD8A09 /* WebLink.swift */; };
 		AB9FFADA298C07DC002AA8F3 /* AnimatableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9FFAD9298C07DC002AA8F3 /* AnimatableGradient.swift */; };
 		ABA448222982B9010033A373 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA448212982B9010033A373 /* ScoreView.swift */; };
@@ -329,7 +329,7 @@
 			files = (
 				AB16FCCF294C89EA0081E2A6 /* Alamofire in Frameworks */,
 				AB8CA1EE29704BC000572777 /* FirebaseCrashlytics in Frameworks */,
-				AB91F51129A3995300EE98C1 /* DolphinMoveSDK in Frameworks */,
+				AB65531F2CA31E22006E979E /* DolphinMoveSDK in Frameworks */,
 				AB8CA1F029704BC000572777 /* FirebaseRemoteConfigSwift in Frameworks */,
 				AB16FCD2294C8B600081E2A6 /* AlertToast in Frameworks */,
 			);
@@ -721,7 +721,7 @@
 				AB16FCD1294C8B600081E2A6 /* AlertToast */,
 				AB8CA1ED29704BC000572777 /* FirebaseCrashlytics */,
 				AB8CA1EF29704BC000572777 /* FirebaseRemoteConfigSwift */,
-				AB91F51029A3995300EE98C1 /* DolphinMoveSDK */,
+				AB65531E2CA31E22006E979E /* DolphinMoveSDK */,
 			);
 			productName = MoveSDKSample;
 			productReference = AB36BE43269F052B005A6AD2 /* MoveApp.app */;
@@ -756,7 +756,7 @@
 				AB16FCCD294C89EA0081E2A6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				AB16FCD0294C8B600081E2A6 /* XCRemoteSwiftPackageReference "AlertToast" */,
 				AB8CA1EC29704BC000572777 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				AB91F50F29A3995300EE98C1 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */,
+				AB4B0B682CA3030C00213C08 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */,
 			);
 			productRefGroup = AB36BE44269F052B005A6AD2 /* Products */;
 			projectDirPath = "";
@@ -1198,20 +1198,20 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		AB4B0B682CA3030C00213C08 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dolphin-technologies/MOVE-iOS-Packages.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
 		AB8CA1EC29704BC000572777 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMinorVersion;
 				minimumVersion = 10.0.0;
-			};
-		};
-		AB91F50F29A3995300EE98C1 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dolphin-technologies/MOVE-iOS-Packages.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1227,6 +1227,11 @@
 			package = AB16FCD0294C8B600081E2A6 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
 		};
+		AB65531E2CA31E22006E979E /* DolphinMoveSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB4B0B682CA3030C00213C08 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */;
+			productName = DolphinMoveSDK;
+		};
 		AB8CA1ED29704BC000572777 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AB8CA1EC29704BC000572777 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -1236,11 +1241,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AB8CA1EC29704BC000572777 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfigSwift;
-		};
-		AB91F51029A3995300EE98C1 /* DolphinMoveSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AB91F50F29A3995300EE98C1 /* XCRemoteSwiftPackageReference "MOVE-iOS-Packages" */;
-			productName = DolphinMoveSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
