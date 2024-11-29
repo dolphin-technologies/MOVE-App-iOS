@@ -59,6 +59,20 @@ The host app is expected to set its `SDKStateListener` before initializing the S
 
 The SDK `initialization` API must be executed before the App delegate's method  `didFinishLaunchingWithOptions` returns. We recommend calling it in `willFinishLaunchingWithOptions`. Check in the app delegate  `SDKManager.shared.initSDK(withOptions: launchOptions)` 
 
+#### Troubleshooting:
+
+This example uses the Swift package manager for loading packages. It may sometimes fail to download packages with an error such as:
+
+    failed with: invalid archive returned from 'https://storage.googleapis.com/cdn.dolph.in/sdk/.../DolphinMoveSDK.xcframework.zip'
+
+The Swift package manager may sometimes fails to download the package and fail with 401.
+Make sure the package at the url exists (with your web browser, curl, or etc...), contact us otherwise.
+
+In this case it is necessary to clear the swift package manager cache folders at:
+	
+	rm -rf ~/Library/Caches/org.swift.swiftpm
+	rm -rf ~/Library/org.swift.swiftpm
+
 ## Support
 [info@dolph.in](mailto://info@dolph.in)
  
